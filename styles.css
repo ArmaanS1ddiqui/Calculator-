@@ -1,0 +1,139 @@
+/* styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #3b4346; /* Light blue background */
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .Calculator {
+    width: 320px;
+    background-color: #333; /* Dark background */
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto repeat(5, 60px);
+    gap: 10px;
+  }
+  
+  .output {
+    grid-column: span 4;
+    background: #333; /* Matching the calculator's background */
+    color: #1eff00; /* Light blue text */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: right;
+  }
+  
+  .prev-display {
+    font-size: 0.8em;
+    color: #66b164;
+    margin-bottom: 10px;
+  }
+  
+  .curr-display {
+    font-size: 1.5em;
+  }
+  
+  button {
+    height: 60px;
+    border: none;
+    font-size: 1.2em;
+    background-color: #444; /* Dark buttons */
+    color: #00c000; /* Light blue text on buttons */
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, transform 0.1s;
+  }
+  
+  button:hover {
+    background-color: #555; /* Slightly lighter on hover */
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  button.operation {
+    background-color: #0089ac;
+    color: white;
+  }
+  
+  button.equal {
+    background-color: #01d412;
+    color: white;
+    grid-row: span 2; /* Span two rows */
+  }
+  
+  button.clear {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  button.delete {
+    background-color: #d1d400;
+    color: white;
+  }
+  
+  /* Layout the buttons */
+  button.clear {
+    grid-column: span 2;
+  }
+  
+  button.delete {
+    grid-column: span 1;
+  }
+  
+  button.operation:nth-child(4) {
+    grid-column: span 1;
+  }
+  
+  button:nth-child(5),
+  button:nth-child(6),
+  button:nth-child(7) {
+    grid-column: span 1;
+  }
+  
+  button.operation:nth-child(8) {
+    grid-column: span 1;
+  }
+  
+  button:nth-child(9),
+  button:nth-child(10),
+  button:nth-child(11) {
+    grid-column: span 1;
+  }
+  
+  button.operation:nth-child(12) {
+    grid-column: span 1;
+  }
+  
+  button:nth-child(13),
+  button:nth-child(14),
+  button:nth-child(15) {
+    grid-column: span 1;
+  }
+  
+  button.operation:nth-child(16) {
+    grid-column: span 1;
+  }
+  
+  button:nth-child(17) {
+    grid-column: span 1;
+  }
+  
+  button:nth-child(18) {
+    grid-column: span 2;
+  }
+  
+  button.equal {
+    grid-column: span 1;
+  }
+  
